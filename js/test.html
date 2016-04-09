@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>intersections</title>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://surfcity.googlecode.com/svn-history/r21/trunk/kevlindev/concats/2D.js"></script>
+
+
+<style>
+
+ 
+.line {
+    fill: none;
+    stroke-width: 4;
+    stroke:#0099FF;
+    opacity:0.9;
+}
+
+p {
+
+    font-family: arial;
+    font-size:14px;
+}
+
+
+
+</style>
+</head>
+<body>
+<script type="text/javascript">
+
+var ampersand = "m 25.253814,263.43304 c 29.889958,-2.86317 58.545065,-17.13799 78.834896,-39.27235 20.28984,-22.13436 32.02373,-51.92028 32.28188,-81.94595 0.085,-9.89205 -1.04195,-19.84619 -4.01598,-29.28097 -2.97403,-9.43478 -7.83912,-18.348108 -14.68303,-25.490996 -6.84391,-7.142888 -15.71705,-12.454265 -25.405541,-14.452525 -9.688493,-1.99826 -20.165512,-0.550977 -28.626429,4.574727 -5.188274,3.143106 -9.550697,7.596511 -12.744592,12.753675 -3.193895,5.157164 -5.228714,11.005829 -6.110217,17.007519 -1.763005,12.00338 1.113557,24.4115 6.744363,35.15781 5.630806,10.74631 13.897258,19.93557 23.086091,27.85735 9.188834,7.92178 19.326581,14.65516 29.430455,21.37088 21.31564,14.16783 42.78425,28.45003 66.41861,38.2735 23.63436,9.82347 49.86181,15.0114 75.00275,10.21383 17.38763,-3.31803 33.85857,-11.4293 46.97304,-23.31835 13.11448,-11.88905 22.81652,-27.5345 27.47032,-44.61317 4.6538,-17.07868 4.21991,-35.53447 -1.3949,-52.32175 -5.61481,-16.78728 -16.41066,-31.827843 -30.62205,-42.381294 -18.01034,-13.374571 -41.59211,-19.254917 -63.63973,-15.113177 -22.04761,4.14174 -42.12872,18.469302 -52.52782,38.346681 -9.19259,17.57119 -10.64421,38.7664 -5.20336,57.83594 5.44085,19.06954 17.4929,35.97405 32.92218,48.43147 15.42928,12.45743 34.11523,20.58238 53.50223,24.75305 19.387,4.17067 39.47759,4.47953 59.19016,2.31968 30.86169,-3.38142 61.54458,-13.07964 86.43024,-31.64255 24.88566,-18.56291 43.4776,-46.59785 46.90989,-77.45392 2.74568,-24.68352 -4.56686,-50.497752 -20.52732,-69.526121 -15.96046,-19.028369 -40.50194,-30.799045 -65.33564,-30.478985 -26.78563,0.345216 -52.70409,14.771188 -68.27353,36.569852 -15.56944,21.798663 -20.86604,50.308294 -15.56914,76.567234 3.94617,19.56282 13.48634,37.83595 26.53449,52.93635 13.04815,15.1004 29.53092,27.07709 47.5016,35.75644 35.94135,17.3587 77.02005,21.41106 116.88275,19.39353 21.23813,-1.0749 42.58462,-3.83801 62.60076,-11.01906 20.01614,-7.18105 38.73658,-19.03432 51.66543,-35.91799 12.92884,-16.88367 19.56769,-39.09119 15.37949,-59.93999 -2.09411,-10.4244 -6.84855,-20.34883 -13.92903,-28.28105 -7.08049,-7.93221 -16.50004,-13.818185 -26.82323,-16.36479 -9.17554,-2.263495 -18.9512,-1.874954 -28.00571,0.832427 -9.05451,2.70738 -17.3807,7.700663 -24.23856,14.203263 -13.71572,13.0052 -21.22519,31.76653 -22.50702,50.62423 -1.25025,18.3932 3.18639,37.13355 12.55063,53.01384 9.36425,15.8803 23.61617,28.83281 40.31669,36.64084 16.70052,7.80804 35.77842,10.4383 53.96872,7.44065 18.1903,-2.99765 35.41541,-11.61043 48.72745,-24.36435";
+
+var svg = d3.select("body").append("svg")
+    .attr("width", 800)
+    .attr("height", 300);
+
+var path = svg.append("svg:path")
+            .attr("d",ampersand)
+            .style("stroke-width", 2)
+            .style("stroke", "steelblue")
+            .style("fill", "none");
+
+// Taken from http://stackoverflow.com/questions/332422/how-do-i-get-the-name-of-an-objects-type-in-javascript
+Object.prototype.getName = function() { 
+   var funcNameRegex = /function (.{1,})\(/;
+   var results = (funcNameRegex).exec((this).constructor.toString());
+   return (results && results.length > 1) ? results[1] : "";
+};
+
+// Taken from http://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array
+function uniq(a) {
+    var prims = {"boolean":{}, "number":{}, "string":{}}, objs = [];
+
+    return a.filter(function(item) {
+        var type = typeof item;
+        if(type in prims)
+            return prims[type].hasOwnProperty(item) ? false : (prims[type][item] = true);
+        else
+            return objs.indexOf(item) >= 0 ? false : objs.push(item);
+    });
+}
+
+var pathEl = path.node();
+var intersections = [];
+
+// Kevin Lindsey's library
+var shape1 = new Path(pathEl);
+var overlays = Intersection.intersectShapes(shape1, shape1);
+
+for (i in overlays.points) {
+    if (overlays.points[i].getName() != "Point2D") {
+       intersections.push(overlays.points[i]);   
+    }
+}
+
+// The path will record 2 points for each intersection, so deduping is necessary
+var deduped_intersections = uniq(intersections);
+
+var circles = svg.selectAll("circle")
+                 .data(deduped_intersections)
+                .enter()
+                 .append("circle");
+
+var circleAttributes = circles
+                       .attr("cx", function (d) { return d.x; })
+                       .attr("cy", function (d) { return d.y; })
+                       .attr("r", "3")
+                       .style("fill", "red");
+
+d3.select('body').selectAll("points").data(intersections).enter().append("p").html(function(d) {return d.x+","+d.y});
+
+</script>
+
+
+</body>
+</html>
