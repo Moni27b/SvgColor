@@ -10,7 +10,7 @@ form {
 svg {
   display: block;
   overflow: hidden;
-  margin: 3em auto;
+  margin: 10em auto;
   max-height: 100%;
   max-width: 100%;
 }
