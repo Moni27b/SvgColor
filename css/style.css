@@ -1,6 +1,6 @@
 form {
   background: rgba(0,0,255,.2);
-  padding: .5em;
+  padding: .2em;
   font-weight: Bold;
   position: fixed;
   top: 0;
@@ -35,14 +35,10 @@ svg {
 	width: 100%;
 	
 	}
-	.ensemble {
-	display: inline-block;
-	white-space: nowrap;
-	margin-right: 100px;
-}
+	
 	form {
 	  background: rgba(0,225,100,.2);
-	  padding: .8em;
+	  padding: .5em;
 	  font-weight: Bold;
 	  position: fixed;
 	  top: 0;
