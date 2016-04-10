@@ -8,15 +8,17 @@ form {
 }
 
 svg {
-  display: block;
-  overflow: hidden;
-  margin: 10em auto;
-  max-height: 100%;
-  max-width: 100%;
+		display: block;
+	  overflow: hidden;
+	  margin: 5em auto;
+	  max-height: auto;
+	  max-width: auto;
 }
 
 .ensemble {
 	display: inline-block;
 	white-space: nowrap;
-	margin-right: 10px;
+	margin-right: 100px;
 }
+
+
