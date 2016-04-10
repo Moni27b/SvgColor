@@ -20,27 +20,43 @@
 
   <form role="toolbar">
 	<div class="ensemble">
-		<label for="select-drawing">Drawing:</label>
-		<select id="select-drawing" name="select-drawing">      
-		  <option value="js/polytech.svg">Polytech</option>
-		  <option value="js/France.svg">France</option>
-		  <option value="https://upload.wikimedia.org/wikipedia/commons/5/51/Latin_America_-_First_level_political_divisions.svg">Amérique du sud</option>
-		  <option value="https://upload.wikimedia.org/wikipedia/commons/3/3d/Locator_map_of_France.svg">Europe</option>
-		  <option value="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">google</option>
-		  <option value="https://upload.wikimedia.org/wikipedia/commons/b/b1/Grand_Maroc.svg">Grand_Maghreb</option>
-		  <option value="https://upload.wikimedia.org/wikipedia/commons/7/76/D%C3%A9partements_et_r%C3%A9gions_de_France_vide.svg"> Departement France</option>
-		  <option value="https://upload.wikimedia.org/wikipedia/commons/a/ac/World_location_map.svg">Monde</option>
-		  <option value="https://upload.wikimedia.org/wikipedia/commons/2/2e/Morocco_location_map.svg">Maroc</option>
-		 
-		</select>
+		<div id= "container">
+			<label for="select-drawing">Selectionner le SVG:</label>
+			<select id="select-drawing" name="select-drawing">  
+				<optgroup label="Logos">
+							<option value="js/polytech.svg">Polytech</option>
+							<option value="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">google</option>
+				  </optgroup>
+				  <optgroup label="Carte Europe">
+					  <option value="js/France.svg">France</option>
+					  <option value="https://upload.wikimedia.org/wikipedia/commons/7/76/D%C3%A9partements_et_r%C3%A9gions_de_France_vide.svg"> Departement France</option>
+						<option value="js/Europe1.svg">Europe</option>
+				  </optgroup>
+			  
+				  <optgroup label="Carte Afrique">
+						<option value="https://upload.wikimedia.org/wikipedia/commons/b/b1/Grand_Maroc.svg">Grand_Maghreb</option>
+						
+				  </optgroup>
+			  
+				  <optgroup label="Cartes">
+					  <option value="https://upload.wikimedia.org/wikipedia/commons/5/51/Latin_America_-_First_level_political_divisions.svg">Amérique du sud</option>
+					  <option value="js/World.svg">Monde</option>
+				  </optgroup>
+			  
+			  
+		
+		
+	  
+			</select>
+		</div>
 	</div>
 
-
-	<div class="ensemble">
-		<label for="select-color">Color:</label>
-		<input class="jscolor" value="ab2567" id="select-color" name="select-color" />
+		<div class="ensemble">
+			<label for="select-color">Couleur:</label>
+			<input class="jscolor" value="ab2567" id="select-color" name="select-color" />
 	</div>
 	<input type="button" value="Réinitialiser" id="reinit">
+	
 
   </form>
 
