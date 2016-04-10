@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="215.76369mm"
-   height="134.66029mm"
-   viewBox="0 0 764.51715 477.14274"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
    id="svg3562"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -23,7 +23,7 @@
        id="clipPath6061">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path6063" />
     </clipPath>
     <clipPath
@@ -71,7 +71,7 @@
        id="clipPath5981">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path5983" />
     </clipPath>
     <clipPath
@@ -87,7 +87,7 @@
        id="clipPath5947">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path5949" />
     </clipPath>
     <clipPath
@@ -135,7 +135,7 @@
        id="clipPath5869">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path5871" />
     </clipPath>
     <clipPath
@@ -151,7 +151,7 @@
        id="clipPath5831">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path5833" />
     </clipPath>
     <clipPath
@@ -223,7 +223,7 @@
        id="clipPath5707">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path5709" />
     </clipPath>
     <clipPath
@@ -239,7 +239,7 @@
        id="clipPath3219">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path3221" />
     </clipPath>
     <clipPath
@@ -247,7 +247,7 @@
        id="clipPath3181">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path3183" />
     </clipPath>
     <clipPath
@@ -255,7 +255,7 @@
        id="clipPath3143">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path3145" />
     </clipPath>
     <clipPath
@@ -263,7 +263,7 @@
        id="clipPath3105">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path3107" />
     </clipPath>
     <clipPath
@@ -271,7 +271,7 @@
        id="clipPath3067">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path3069" />
     </clipPath>
     <clipPath
@@ -279,7 +279,7 @@
        id="clipPath3029">
       <path
          inkscape:connector-curvature="0"
-         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 Z"
+         d="m 0,0 1020.472,0 0,419.528 L 0,419.528 0,0 z"
          id="path3031" />
     </clipPath>
   </defs>
@@ -291,8 +291,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="277.84719"
-     inkscape:cy="557.2143"
+     inkscape:cx="375"
+     inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -300,13 +300,7 @@
      inkscape:window-height="705"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     units="mm"
-     width="177mm"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata3567">
     <rdf:RDF>
@@ -322,10 +316,9 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-26.31286,-495.21949)">
+     id="layer1">
     <g
-       transform="matrix(0.48688182,0,0,0.47714286,374.4031,526.44112)"
+       transform="matrix(0.48688182,0,0,0.47714286,354.4031,155.0125)"
        id="layer1-1"
        inkscape:label="Calque 1">
       <g
